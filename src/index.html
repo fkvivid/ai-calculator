@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="calculator">
+      <div class="display-wrap">
+        <div id="display" class="display" aria-live="polite">0</div>
+        <div id="loading" class="loading hidden" aria-hidden="true">
+          <div class="spinner" aria-hidden="true"></div>
+          <p class="loading-title">Consulting the AI…</p>
+          <p id="loading-status" class="loading-status">Warming up neurons…</p>
+        </div>
+      </div>
+
+      <div class="keys" id="keys">
+        <button type="button" data-action="clear" class="key key-fn">C</button>
+        <button type="button" data-op="/" class="key key-op">÷</button>
+        <button type="button" data-op="*" class="key key-op">×</button>
+        <button type="button" data-action="backspace" class="key key-fn">⌫</button>
+
+        <button type="button" data-digit="7" class="key">7</button>
+        <button type="button" data-digit="8" class="key">8</button>
+        <button type="button" data-digit="9" class="key">9</button>
+        <button type="button" data-op="-" class="key key-op">−</button>
+
+        <button type="button" data-digit="4" class="key">4</button>
+        <button type="button" data-digit="5" class="key">5</button>
+        <button type="button" data-digit="6" class="key">6</button>
+        <button type="button" data-op="+" class="key key-op">+</button>
+
+        <button type="button" data-digit="1" class="key">1</button>
+        <button type="button" data-digit="2" class="key">2</button>
+        <button type="button" data-digit="3" class="key">3</button>
+        <button type="button" data-action="equals" class="key key-eq">=</button>
+
+        <button type="button" data-digit="0" class="key key-zero">0</button>
+        <button type="button" data-digit="." class="key">.</button>
+      </div>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
